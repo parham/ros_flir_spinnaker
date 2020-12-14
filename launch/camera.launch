@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<!--
+    ================ Le Manchot =================
+    == Project | Le Manchot                    ==
+    == Author  | Parham Nooralishahi           ==
+    == Contact | parham.nooralishahi@gmail.com ==
+    == Organization | Laval University         ==
+    =============================================
+-->
+
+<launch>
+    <param name="serial" type="str" value="85901153"/>
+    <node pkg="ros_flir_spinnaker" name="phm_flir_spinnaker" type="flir_node" output="screen" respawn="true"/>
+</launch>

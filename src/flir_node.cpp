@@ -32,6 +32,14 @@ bool executeTurnOnOff(
     return true;
 }
 
+void initializeParams (ros::NodeHandle & nodeHandle) {
+    std::string serial;
+    if (nodeHandle.getParam("serial", serial)) {
+        ROS_INFO_STREAM("serial " << serial << " is initiated!");
+        cameraHandler.setSerial(serial);
+    }
+}
+
 int main(int argc, char ** argv) {
 
     std::string nodeName = "phm_flir_spinnaker";
@@ -53,6 +61,9 @@ int main(int argc, char ** argv) {
     // Define the publisher type and configurations
     image_transport::ImageTransport imageTransport(nodeHandle);
     image_transport::Publisher pub = imageTransport.advertise("thermal_camera/image", 1);
+
+    // Initialize parameters of the camera core
+    initializeParams(nodeHandle);
 
     cameraHandler.connect();
     cameraHandler.start();

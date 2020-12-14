@@ -91,6 +91,11 @@ void phm::SpinnakerCamera::connect () {
 
     if (!bCameraInitialized_) {
         try{
+            if (!serial.empty()) {
+                ROS_INFO_STREAM("The camera with serial (" << serial << ") is used for connection.");
+            } else {
+                ROS_INFO("The first camera in the camera list is used for connection.");
+            }
             pCamera_ = !serial.empty() ? 
                 cameraList_.GetBySerial(serial) :
                 cameraList_.GetByIndex(0);

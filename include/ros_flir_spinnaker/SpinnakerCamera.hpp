@@ -18,6 +18,7 @@
 #include "ros_flir_spinnaker/Camera.hpp"
 #include "ros_flir_spinnaker/A700.hpp"
 
+#include <ros/ros.h>
 #include <sensor_msgs/Image.h>            // ROS message header for Image
 #include <sensor_msgs/image_encodings.h>  // ROS header for the different supported image encoding types
 #include <sensor_msgs/fill_image.h>
