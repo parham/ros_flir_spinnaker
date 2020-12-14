@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/parham/ros_flir_spinnaker">
-    <img src="https://www.dsv.ulaval.ca/wp-content/uploads/2018/02/RTEmagicC_06867499dd.gif.gif" alt="Logo" width="320" height="100">
+    <img src="https://www.dsv.ulaval.ca/wp-content/uploads/2018/02/RTEmagicC_06867499dd.gif.gif" alt="Logo" width="320" height="120">
   </a>
 
   <h3 align="center">PHM FLIR Spinnaker Driver for ROS</h3>
