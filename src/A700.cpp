@@ -1,5 +1,4 @@
 
-
 #include "ros_flir_spinnaker/A700.hpp"
 
 phm::A700::A700(Spinnaker::GenApi::INodeMap * node) : phm::Camera(node) {
