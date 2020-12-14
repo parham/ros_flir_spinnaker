@@ -1,10 +1,9 @@
 
 #include <ros/ros.h>
+#include <string>
 #include <signal.h>
 #include <dynamic_reconfigure/server.h>
 #include <image_transport/image_transport.h>
-#include <opencv2/opencv.hpp>
-#include <opencv2/highgui/highgui.hpp>
 #include <cv_bridge/cv_bridge.h>
 
 #include "Spinnaker.h"
@@ -34,8 +33,10 @@ bool executeTurnOnOff(
 }
 
 int main(int argc, char ** argv) {
+
+    std::string nodeName = "phm_flir_spinnaker";
     // Initialize ROS Node
-    ros::init(argc, argv, "phm_spinnaker", ros::init_options::NoSigintHandler);
+    ros::init(argc, argv, nodeName, ros::init_options::NoSigintHandler);
     // Initialize the reconfiguration server
     ROS_INFO("Initializing the reconfiguration service ...");
     dynamic_reconfigure::Server<ros_flir_spinnaker::phmSpinnakerConfig> server;
@@ -47,8 +48,8 @@ int main(int argc, char ** argv) {
     ros::NodeHandle nodeHandle;
     // Initialize Service server
     ROS_INFO("Initializing the service server ...");
-    ros::ServiceServer serviceExecuteCommand = nodeHandle.advertiseService("execute", executeCommand);
-    ros::ServiceServer serviceExecuteOnOff = nodeHandle.advertiseService("on_off", executeTurnOnOff);
+    ros::ServiceServer serviceExecuteCommand = nodeHandle.advertiseService(nodeName + "/execute", executeCommand);
+    ros::ServiceServer serviceExecuteOnOff = nodeHandle.advertiseService(nodeName + "/on_off", executeTurnOnOff);
     // Define the publisher type and configurations
     image_transport::ImageTransport imageTransport(nodeHandle);
     image_transport::Publisher pub = imageTransport.advertise("thermal_camera/image", 1);

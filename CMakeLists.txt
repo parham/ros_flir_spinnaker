@@ -17,6 +17,7 @@ find_package(catkin REQUIRED COMPONENTS
   cv_bridge
   image_transport
   nodelet
+  rospy
   roscpp
   roslaunch
   sensor_msgs
@@ -42,14 +43,6 @@ endif()
 message(STATUS "libSpinnaker library: ${Spinnaker_LIBRARIES}")
 message(STATUS "libSpinnaker include: ${Spinnaker_INCLUDE_DIRS}")
 
-find_package(OpenCV REQUIRED)
-if(NOT OpenCV_FOUND)
-  message(STATUS "OpenCV not found in system library path")
-endif()
-
-message(STATUS "OpenCV library: ${OpenCV_LIBRARIES}")
-message(STATUS "OpenCV include: ${OpenCV_INCLUDE_DIRS}")
-
 add_service_files(
   FILES
   ExecuteCommand.srv
@@ -73,7 +66,6 @@ include_directories(
   include
   ${catkin_INCLUDE_DIRS}
   ${Spinnaker_INCLUDE_DIRS}
-  ${OpenCV_INCLUDE_DIRS}
 )
 
 file(GLOB PHM_INCLUDE
@@ -89,7 +81,6 @@ add_library(${PHM_LIB}
 )
 target_link_libraries(${PHM_LIB} 
   ${Spinnaker_LIBRARIES}
-  ${OpenCV_LIBS}
   pthread
 )
 add_dependencies(${PHM_LIB} ${PROJECT_NAME}_gencfg)

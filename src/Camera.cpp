@@ -23,8 +23,6 @@ void phm::Camera::initialize() {
     Spinnaker::GenApi::CIntegerPtr widthMaxNode =
         static_cast<Spinnaker::GenApi::CIntegerPtr>(getProperty("WidthMax"));
     iMaxWidth = widthMaxNode->GetValue();
-    // Set Throughput to maximum
-    // phm::setMaxInt(pNodeMap.get(), "DeviceLinkThroughputLimit");
 }
 
 void phm::Camera::configure(const ros_flir_spinnaker::phmSpinnakerConfig &, uint32_t) {

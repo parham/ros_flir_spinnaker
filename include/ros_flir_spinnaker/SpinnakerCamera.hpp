@@ -14,7 +14,6 @@
 
 #include "Spinnaker.h"
 #include "SpinGenApi/SpinnakerGenApi.h"
-#include "opencv2/opencv.hpp"
 
 #include "ros_flir_spinnaker/Camera.hpp"
 #include "ros_flir_spinnaker/A700.hpp"

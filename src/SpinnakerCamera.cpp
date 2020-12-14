@@ -308,21 +308,6 @@ int phm::SpinnakerCamera::next(sensor_msgs::Image * frame, Spinnaker::ImageStatu
                 sensor_msgs::fillImage(* frame, imageEncoding, 
                     height, width, stride, img->GetData());
                 frame->header.frame_id = std::to_string(img->GetFrameID());
-                // cv::Mat tmp;
-                // switch(img->GetPixelFormat()) {
-                //     case PixelFormat_Mono8:
-                //         tmp = cv::Mat(img->GetHeight() + img->GetYPadding(), img->GetWidth() + img->GetXPadding(), CV_8UC1);
-                //         tmp.data = (uchar *) img->GetData();
-                //         frame.frame = tmp.clone();
-                //         break;
-                //     case PixelFormat_Mono16:
-                //         tmp = cv::Mat(img->GetHeight() + img->GetYPadding(), img->GetWidth() + img->GetXPadding(), CV_16UC1);
-                //         tmp.data = (uchar *) img->GetData();
-                //         frame.frame = tmp.clone();
-                //         break;
-                //     default:
-                //         throw std::runtime_error("The pixel format is not supported!");
-                // }
             }
             // Release the collected frame
             img->Release();
