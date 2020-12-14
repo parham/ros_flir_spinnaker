@@ -1,0 +1,4 @@
+string command
+bool state
+---
+bool prev
