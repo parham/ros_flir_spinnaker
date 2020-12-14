@@ -1,0 +1,460 @@
+Application build date: Jun  5 2020 13:58:15
+
+Spinnaker library version: 2.0.0.147
+
+Number of cameras detected: 1
+
+
+Running example for camera 0...
+
+*** PRINTING TRANSPORT LAYER DEVICE NODEMAP ***
+
+Root
+   Device Information
+      Device ID: 00407F10713E
+      Device Serial Number: 85901153
+      Device Vendor Name  : FLIR Systems
+      Device Model Name: FLIR A700
+      Device Type: GigEVision
+      Device Display Name: FLIR Systems
+      Device Access Status: ReadWrite
+      Device Version: 41.0.0
+      Device User ID: 
+      Device Driver Version: none : 0.0.0.0
+      Device Is Updater Mode: 0
+      CCP: OpenAccess
+      GUI XML Source: Device
+      GUI XML Path: Input.xml
+      GenICam XML Source: Device
+      GenICam XML Path: 
+      Gev Device IP Address: 0xa9fe0578
+      Gev Device Subnet Mask: 0xffff0000
+      Gev Device MAC Address: 0x407f10713e
+      Gev Device Gateway: 0
+      Gev Version Major: 2
+      Gev Version Minor: 0
+      Gev Device Mode Is Big Endian: 1
+      Read And Write Timeout: 100000
+      Maximum Retry Count: 3
+      Gev Device Port: 0
+      Maximum Packet Size: 576
+      Device Is On Wrong Subnet: 0
+      Auto Force IP: 0
+      Gev Device Force IP: 0
+      Gev Device Force IP Address: 0
+      Gev Device Force Subnet Mask: 0
+      Gev Device Force Gateway: 0
+
+   Device Control
+      Multicast Monitor Mode: 0
+      Device Endianness Mechanism: Standard
+
+
+*** PRINTING TL STREAM NODEMAP ***
+
+Root
+   Stream Information
+      Stream ID  : 0
+      Stream Type: GigEVision
+
+   Buffer Handling Control
+      Manual Stream Buffer Count: 10
+      Resulting Stream Buffer Count: 10
+      Stream Buffer Count Max: 941
+      Stream Buffer Count Mode: Manual
+      Stream Buffer Handling Mode: OldestFirst
+      Stream Announce Buffer Minimum: 1
+      Stream Announced Buffer Count: 0
+      Stream Started Frame Count: 0
+      Stream Delivered Frame Count: 0
+      Stream Lost Frame Count: 0
+      Stream Input Buffer Count: 0
+      Stream Output Buffer Count: 0
+      CRC Check Enable: 0
+      Enable Resends: 1
+      Maximum Number Of Resends Per Image: 10
+      Resend Timeout: 100
+      Stream Is Grabbing: 0
+      Stream Chunk Count Maximum: 50
+      Stream Buffer Alignment: 1
+
+   Stream Diagnostics
+      Packets Received: 0
+      Packets Missed: 0
+      Retransmitted Packets: 0
+      Failed Buffer Count: 0
+      Retransmit Packets Requested: 0
+
+
+*** PRINTING GENICAM NODEMAP ***
+
+Root
+   DeviceControl
+      Vendor Name: FLIR Systems
+      Model Name: FLIR A700
+      Device Manufacturer Info: ACAM,Gen_A,GEV,1.0.0,GEV,1.0.0
+      Device Serial Number: 85901153
+      Device User ID: 85901153
+      Device User ID: 
+      Device SFNC Major Version: 2
+      Device SFNC Minor Version: 4
+      Device SFNC Sub Minor Version: 0
+      Device Version: 41.0.0
+      Device Character Set: UTF8
+      Device Temperature Selector: Shutter
+         Device Temperature Selector: Shutter
+            Device Temperature: 314.1
+         Device Temperature Selector: Lens
+            Device Temperature: 303
+         Device Temperature Selector: House
+            Device Temperature: 325.7
+         Device Temperature Selector: Board
+            Device Temperature: 322.7
+      Device Temperature: 314.1
+      Device Manifest XMLMajor Version: 1
+      Device Manifest XMLMinor Version: 0
+      Device Manifest XMLSub Minor Version: 0
+      Device Type: Transmitter
+      Device Sensor Scan Type: Areascan
+      Device TL Type: GigEVision
+      Device TL Version Major: 2
+      Device TL Version Major: 0
+      Device Registers Endianness: Big
+      Device Event Channel Count: 1
+      Device Stream Channel Count: 1
+      Device Link Selector: 0
+      Device Link Heartbeat Timeout: 3e+06
+      Device Timestamp: 0
+
+   ImageFormatControl
+      Sensor Width: 640
+      Sensor Height: 480
+      Width Max: 640
+      Height Max: 480
+      Width: 640
+      Height: 480
+      Offset X: 0
+      Offset Y: 0
+      BinningHorizontal: 1
+      BinningVertical: 1
+      Decimation Horizontal: 1
+      Decimation Vertical: 1
+      Pixel format: Mono8
+      Pixel Size: Bpp8
+      Overlay: Off
+      Image Mode: MSX
+      TestPattern: Off
+      ImageCompressionMode: Off
+      Image Compression Quality: 36
+      Image Compression Bitrate: 3
+
+   AcquisitionControl
+      Acquisition mode: Continuous
+      Acquisition Frame Count: 1
+      Acquisition Frame Rate: 30
+      Trigger Selector: AcquisitionStart
+         Trigger Selector: AcquisitionStart
+            Trigger Mode: Off
+            Trigger Source: SoftwareSignal0
+            Trigger Activation: RisingEdge
+            Trigger Delay: 0
+         Trigger Selector: AcquisitionEnd
+            Trigger Mode: Off
+            Trigger Source: SoftwareSignal0
+            Trigger Activation: RisingEdge
+            Trigger Delay: 0
+         Trigger Selector: AcquisitionActive
+            Trigger Mode: Off
+            Trigger Source: SoftwareSignal0
+            Trigger Activation: RisingEdge
+            Trigger Delay: 0
+      Trigger Mode: Off
+      Trigger Source: SoftwareSignal0
+      Trigger Activation: RisingEdge
+      Trigger Delay: 0
+
+   Digital IO Control
+      Line Selector: Line0
+         Line Selector: Line0
+            Line Mode: Input
+            Line Inverter: 0
+            Line Status: 0
+            Line Format: OptoCoupled
+            LineTrigger: Off
+            Line Activation: RisingEdge
+         Line Selector: Line1
+            Line Mode: Input
+            Line Inverter: 0
+            Line Status: 0
+            Line Format: OptoCoupled
+            LineTrigger: Off
+            Line Activation: RisingEdge
+         Line Selector: Line2
+            Line Mode: Output
+            Line Inverter: 0
+            Line Status: 0
+            Line Source: Off
+            Line Format: OptoCoupled
+         Line Selector: Line3
+            Line Mode: Output
+            Line Inverter: 0
+            Line Status: 0
+            Line Source: Off
+            Line Format: OptoCoupled
+      Line Mode: Input
+      Line Inverter: 0
+      Line Status: 0
+      Line Format: OptoCoupled
+      LineTrigger: Off
+      Line Activation: RisingEdge
+      User Output Selector: UserOutput0
+         User Output Selector: UserOutput0
+            User Output Value: 0
+         User Output Selector: UserOutput1
+            User Output Value: 0
+      User Output Value: 0
+
+   Counter And Timer Control
+      Counter Selector: Counter1
+         Counter Selector: Counter1
+            Counter Event Source: Off
+            Counter Event Activation: RisingEdge
+            Counter Event Source: Off
+            Counter Reset Activation: RisingEdge
+            Counter Value: 0
+            Counter Value At Reset: 0
+            Counter Duration: 0
+            Counter Status: CounterIdle
+            Counter Trigger Source: Off
+            Counter Trigger Activation: RisingEdge
+      Counter Event Source: Off
+      Counter Event Activation: RisingEdge
+      Counter Event Source: Off
+      Counter Reset Activation: RisingEdge
+      Counter Value: 0
+      Counter Value At Reset: 0
+      Counter Duration: 0
+      Counter Status: CounterIdle
+      Counter Trigger Source: Off
+      Counter Trigger Activation: RisingEdge
+      Timer Selector: Timer0
+         Timer Selector: Timer0
+            Timer Duration: 0
+            Timer Delay: 0
+            Timer Value: 0
+            Timer Status: TimerIdle
+            Timer Trigger Source: Off
+            Timer Trigger Activation: RisingEdge
+         Timer Selector: Timer1
+            Timer Duration: 0
+            Timer Delay: 0
+            Timer Value: 0
+            Timer Status: TimerIdle
+            Timer Trigger Source: Off
+            Timer Trigger Activation: RisingEdge
+         Timer Selector: Timer2
+            Timer Duration: 0
+            Timer Delay: 0
+            Timer Value: 0
+            Timer Status: TimerIdle
+            Timer Trigger Source: Off
+            Timer Trigger Activation: RisingEdge
+         Timer Selector: Timer3
+            Timer Duration: 0
+            Timer Delay: 0
+            Timer Value: 0
+            Timer Status: TimerIdle
+            Timer Trigger Source: Off
+            Timer Trigger Activation: RisingEdge
+      Timer Duration: 0
+      Timer Delay: 0
+      Timer Value: 0
+      Timer Status: TimerIdle
+      Timer Trigger Source: Off
+      Timer Trigger Activation: RisingEdge
+
+   Event Control
+      Event Selector: AcquisitionStart
+         Event Selector: Test
+            Event Notification: Off
+         Event Selector: AcquisitionStart
+            Event Notification: Off
+         Event Selector: AcquisitionEnd
+            Event Notification: Off
+         Event Selector: CounterEnd
+            Event Notification: Off
+         Event Selector: Timer0End
+            Event Notification: Off
+         Event Selector: Timer1End
+            Event Notification: Off
+         Event Selector: Timer2End
+            Event Notification: Off
+         Event Selector: Timer3End
+            Event Notification: Off
+         Event Selector: NUCStart
+            Event Notification: Off
+         Event Selector: NUCEnd
+            Event Notification: Off
+      Event Notification: Off
+      Test Event Data
+         EventTest: 36864
+
+      AcquisitionStart Event Data
+         EventAcquisitionStart: 36865
+
+      AcquisitionEnd Event Data
+         EventAcquisitionEnd: 36866
+
+      CounterEnd Event Data
+         EventCounterEnd: 36867
+
+      Timer0End Event Data
+         EventTimer0End: 36868
+
+      Timer1End Event Data
+         EventTimer1End: 36869
+
+      Timer2End Event Data
+         EventTimer2End: 36870
+
+      Timer3End Event Data
+         EventTimer3End: 36871
+
+      NUCStart Event Data
+         EventNUCStart: 36872
+
+      NUCEnd Event Data
+         EventNUCEnd: 36873
+
+
+   Chunk Data Control
+      Chunk Mode Active: 1
+      Chunk Selector: Calibration
+         Chunk Selector: Calibration
+            Chunk Enable: 1
+      Chunk Enable: 1
+
+   TransportLayerControl
+      Payload Size: 307200
+      GEV Version Major: 2
+      GEV Version Minor: 0
+      GEV Device Mode Is Big Endian: 1
+      GEV MAC Address: 0x407f10713e
+      GEV Supported Option Selector: IPConfigurationLLA
+      GEV Supported IP Configuration LLA: 1
+      GEV Supported Option: 1
+      GEV Current IP Configuration LLA: 1
+      GEV Current IP Configuration DHCP: 1
+      GEV Current IP Configuration Persistent IP: 0
+      GEV IP Configuration Status: LLA
+      GEV Current IP Address: 0xa9fe0578
+      GEV Current Subnet Mask: 0xffff0000
+      GEV Current Default Gateway: 0
+      GEV First URL: Local:flir_axxx_rev41_0.zip;4000000...
+      GEV Second URL: 
+      GEV Persistent IP Address: 0xffffffff
+      GEV Persistent Subnet Mask: 0xffffffff
+      GEV Persistent Default Gateway: 0xffffffff
+      GEV Message Channel Count: 1
+      GEV Stream Channel Count: 1
+      GEV CCP: ControlAccess
+      GEV MCP Host Port: 9881
+      GEV MCDA: 0xa9fe5b0b
+      GEV MCTT: 0
+      GEV MCRC: 3
+      GEV MCSP: 20203
+      GEV SCP Host Port: 8881
+      GEV SCPS Packet Size: 1444
+      GEV SCDA: 0xa9fe5b0b
+      GEV SCSP: 20202
+      GVSP Extended ID Mode: Off
+      PTP Control
+         PTP Enable: 0
+         PTP Clock Status: Disabled
+
+
+   Source Control
+      VideoSourceSelector: IR
+      SourceCount: 2
+
+   FLIR Focus Control
+      Focus Position: 32540
+      Focus Motor Speed: 10
+      Focus Direction: Stop
+      Auto Focus Method: Coarse
+      Focus Distance: 0.4294
+      Focus Step: 10
+      FocusAreaX1: 240
+      FocusAreaX2: 399
+      FocusAreaY1: 180
+      FocusAreaY2: 299
+
+   FLIR Camera Control
+      Power Mode: PowerOverEthernet
+      NUC Mode: Automatic
+      Image Adjust Mode: Manual
+      Noise Reduction: On
+      Scale Lower Limit: 294.7
+      Scale Upper Limit: 306.6
+      NumCases: 6
+      CurrentCase: 3
+      QueryCase: 0
+      QueryCaseLowLimit: 253.15
+      QueryCaseHighLimit: 393.15
+      CameraCapabilities: 23
+      QueryCaseEnabled: 0
+      UPNP: 0
+      TSensSelector: Shutter
+         TSensSelector: Shutter
+            TSens: 314.1
+         TSensSelector: Lens
+            TSens: 303
+         TSensSelector: House
+            TSens: 325.7
+         TSensSelector: Board
+            TSens: 322.7
+      TSens: 314.1
+      LensConnected: 0
+      FlipValue: 3
+      LensName: FOL18
+      Segment: scientific
+      Lens Torch: Off
+
+   FLIR Stream Control
+      IR Pixel Format: Radiometric
+      IRFrameRate: Rate30Hz
+      IRWindowing: Off
+
+   FLIR Object Parameters
+      Reflected Temperature: 293.15
+      Atmospheric Temperature: 293.15
+      Object Distance: 1
+      Object Emissivity: 0.95
+      Relative Humidity: 0.5
+      External Optics Temperature: 293.15
+      External Optics Transmission: 1
+      Estimated Transmission: 0
+
+   FLIR Measurement
+      R: 16158
+      B: 1420.7
+      F: 1
+      Global Offset: 4636
+      Global Gain: 30.4475
+      alpha1: 1.239e-08
+      alpha2: 1.1095e-08
+      X: 0.732
+      beta1: 0.00318
+      beta2: 0.0031802
+
+   Software Signal Control
+      Software Signal Selector: SoftwareSignal0
+         Software Signal Selector: SoftwareSignal0
+
+   TestControl
+
+
+Camera 0 example complete...
+
+
+Done! Press Enter to exit...
