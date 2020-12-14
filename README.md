@@ -2,16 +2,12 @@
 <br />
 <p align="center">
   <a href="https://github.com/parham/ros_flir_spinnaker">
-    <img src="https://torngats.ca/css/img/logo-en_US.png?1603473813" alt="Logo" width="320" height="100">
-  </a>
-  <a href="https://github.com/parham/ros_flir_spinnaker">
     <img src="https://www4.fsa.ulaval.ca/wp-content/uploads/2018/12/fsaulaval.jpg" alt="Logo" width="320" height="100">
   </a>
 
   <h3 align="center">PHM FLIR Spinnaker Driver for ROS</h3>
 
   <p align="center">
-    <a href="https://torngats.ca/en/"><strong>TORNGATS</strong></a> | 
     <a href="http://mivim.gel.ulaval.ca/?Lang=1"><strong>ULAVAL -- MiViM</strong></a>
     <br/>
     <br/>
