@@ -13,6 +13,7 @@
 #include "ros_flir_spinnaker/ExecuteOnOff.h"
 
 phm::SpinnakerCamera cameraHandler;
+bool rosServiceStatus = true;
 
 void reconfigureCallBack(ros_flir_spinnaker::phmSpinnakerConfig & config, uint32_t level) {
     cameraHandler.configure(config,level);
@@ -40,6 +41,13 @@ void initializeParams (ros::NodeHandle & nodeHandle) {
     }
 }
 
+void interrupt_signal (int sig) {
+    ROS_WARN_STREAM("Node is going to be shutdown ...");
+    rosServiceStatus = false;
+    // All the default SIGINT handler does is call shutdown()
+    ros::shutdown();
+}
+
 int main(int argc, char ** argv) {
 
     std::string nodeName = "phm_flir_spinnaker";
@@ -54,6 +62,8 @@ int main(int argc, char ** argv) {
     server.setCallback(func);
 
     ros::NodeHandle nodeHandle;
+
+    signal(SIGINT, interrupt_signal);
     // Initialize Service server
     ROS_INFO("Initializing the service server ...");
     ros::ServiceServer serviceExecuteCommand = nodeHandle.advertiseService(nodeName + "/execute", executeCommand);
@@ -68,13 +78,16 @@ int main(int argc, char ** argv) {
     cameraHandler.connect();
     cameraHandler.start();
 
-    while(ros::ok()) {
+    while(ros::ok() && rosServiceStatus) {
         sensor_msgs::Image msg;
         Spinnaker::ImageStatus status;
         if (cameraHandler.next(&msg, status) == 0) {
             pub.publish(msg);
         }
         ros::spinOnce();
+        if (!rosServiceStatus) {
+            break;
+        }
     }
 
     cameraHandler.stop();

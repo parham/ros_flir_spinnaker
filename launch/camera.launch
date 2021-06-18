@@ -10,6 +10,10 @@
 -->
 
 <launch>
-    <param name="serial" type="str" value="85901153"/>
-    <node pkg="ros_flir_spinnaker" name="phm_flir_spinnaker" type="flir_node" output="screen" respawn="true"/>
+    <arg name="thermal_serial_no" default="85901153"/>
+    <arg name="thermal_node_name" default="phm_flir_spinnaker"/>
+    <group ns="phm">
+        <param name="serial" type="str" value="$(arg thermal_serial_no)"/>
+        <node pkg="ros_flir_spinnaker" name="$(arg thermal_node_name)" type="flir_node" output="screen" respawn="true"/>
+    </group>
 </launch>
