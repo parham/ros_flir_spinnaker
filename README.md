@@ -37,6 +37,14 @@ For prepare the node:
 
 FLIR A400 and A700 Science Kits offer researchers and engineers a streamlined solution for accurate temperature measurement. Simplified yet robust connections help you set up and start testing quickly; then easily view, acquire, and analyze data using included FLIR Research Studio software. The Standard kit includes a FLIR A400 or A700 Image Streaming camera, 24° lens with automatic/remote and manual focusing, as well as FLIR Macro Mode. The Professional kit has the added benefits of MSX® image enhancement, radiometric data transmission over Wi-Fi, and a close-up lens for accurate thermal measurements on small components.
 
+### FLIR ROS Node's Configuration
+
+In order to change the configurations of FLIR node, the following command can be used:
+
+``` 
+rosrun rqt_gui rqt_gui -s reconfigure
+```
+
 ### Built With
 * [ROS](https://www.ros.org)
 * camera_info_manager
