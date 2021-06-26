@@ -289,7 +289,9 @@ int phm::SpinnakerCamera::next(sensor_msgs::Image * frame, Spinnaker::ImageStatu
             } else {
                 ////// Retrieve meta data
                 // Set Image Time Stamp
-                frame->header.stamp.sec = img->GetTimeStamp() * 1e-9;
+                frame->header.stamp = ros::Time::now();
+                frame->header.seq++;
+                // frame->header.stamp.sec = img->GetTimeStamp() * 1e-9;
                 frame->header.stamp.nsec = img->GetTimeStamp();
                 // Check the bits per pixel
                 size_t bitsPerPixel = img->GetBitsPerPixel();
