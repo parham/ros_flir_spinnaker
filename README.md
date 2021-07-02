@@ -5,7 +5,7 @@
     <img src="https://www.dsv.ulaval.ca/wp-content/uploads/2018/02/RTEmagicC_06867499dd.gif.gif" alt="Logo" width="320" height="120">
   </a>
 
-  <h3 align="center">PHM FLIR Spinnaker Driver for ROS</h3>
+  <h3 align="center">LeManchot - FLIR ROS Node for A700 Camera</h3>
 
   <p align="center">
     <a href="http://mivim.gel.ulaval.ca/?Lang=1"><strong>ULAVAL -- MiViM</strong></a>
@@ -14,7 +14,6 @@
   </p>
 </p>
 
-#Parent project: @Le Manchot
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
@@ -28,16 +27,21 @@
 
 ## About The Project
 
-The work is a ros driver for Gige-V FLIR thermal cameras (especially FLIR A700) supported by Spinnaker SDK.
-
-For prepare the node:
-``` catkin_make ```
+LeManchot FLIR Node is a ROS driver for communicating with a Gige-V FLIR thermal cameras (especially FLIR A700) supported by Spinnaker SDK.
+It provides following capabilities:
+* Provides image stream 
+* Configuring the  
 
 ### FLIR A700 Thermal Camera
 
 FLIR A400 and A700 Science Kits offer researchers and engineers a streamlined solution for accurate temperature measurement. Simplified yet robust connections help you set up and start testing quickly; then easily view, acquire, and analyze data using included FLIR Research Studio software. The Standard kit includes a FLIR A400 or A700 Image Streaming camera, 24° lens with automatic/remote and manual focusing, as well as FLIR Macro Mode. The Professional kit has the added benefits of MSX® image enhancement, radiometric data transmission over Wi-Fi, and a close-up lens for accurate thermal measurements on small components.
 
-### FLIR ROS Node's Configuration
+## Installation and Initialization
+
+For prepare the node:
+``` catkin_make ```
+
+### Node's Configuration
 
 In order to change the configurations of FLIR node, the following command can be used:
 
