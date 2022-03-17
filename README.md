@@ -34,7 +34,7 @@ It provides following capabilities:
 
 ### FLIR A700 Thermal Camera
 
-FLIR A400 and A700 Science Kits offer researchers and engineers a streamlined solution for accurate temperature measurement. Simplified yet robust connections help you set up and start testing quickly; then easily view, acquire, and analyze data using included FLIR Research Studio software. The Standard kit includes a FLIR A400 or A700 Image Streaming camera, 24° lens with automatic/remote and manual focusing, as well as FLIR Macro Mode. The Professional kit has the added benefits of MSX® image enhancement, radiometric data transmission over Wi-Fi, and a close-up lens for accurate thermal measurements on small components.
+> FLIR A400 and A700 Science Kits offer researchers and engineers a streamlined solution for accurate temperature measurement. Simplified yet robust connections help you set up and start testing quickly; then easily view, acquire, and analyze data using included FLIR Research Studio software. The Standard kit includes a FLIR A400 or A700 Image Streaming camera, 24° lens with automatic/remote and manual focusing, as well as FLIR Macro Mode. The Professional kit has the added benefits of MSX® image enhancement, radiometric data transmission over Wi-Fi, and a close-up lens for accurate thermal measurements on small components.
 
 ## Installation and Initialization
 
