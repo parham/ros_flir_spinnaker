@@ -28,9 +28,22 @@
 ## About The Project
 
 LeManchot FLIR Node is a ROS driver for communicating with a Gige-V FLIR thermal cameras (especially FLIR A700) supported by Spinnaker SDK.
-It provides following capabilities:
-* Provides image stream 
-* Configuring the  
+
+### Citation
+
+In case of any use or reference, please cite:
+
+```
+@article{nooralishahi2022drone,
+  title={Drone-Enabled Multimodal Platform for Inspection of Industrial Components},
+  author={Nooralishahi, Parham and L{\'o}pez, Fernando and Maldague, Xavier PV},
+  journal={IEEE Access},
+  volume={10},
+  pages={41429--41443},
+  year={2022},
+  publisher={IEEE}
+}
+```
 
 ### FLIR A700 Thermal Camera
 
