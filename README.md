@@ -51,7 +51,7 @@ In case of any use or reference, please cite:
 
 ## Installation and Initialization
 
-For prepare the node:
+For preparing the node:
 ``` catkin_make ```
 
 ### Node's Configuration
